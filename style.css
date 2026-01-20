@@ -2,15 +2,15 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Times New Roman';
 }
 
 /* ======== SIDEBAR (DESKTOP) ======== */
 
 #sidebar {
   width: 240px;
-  background: #fff;
-  border-right: 1px solid #ddd;
+  background: #A7C7E7;
+  border-right: 1px solid #FFEAA7;
   height: 100vh;
   padding-top: 20px;
   position: fixed;
@@ -33,7 +33,7 @@ body {
   display: block;
   padding: 14px 20px;
   text-decoration: none;
-  color: #222;
+  color: #E9B8CE;
 }
 
 /* ======== MAIN ======== */
