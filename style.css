@@ -50,8 +50,7 @@ main {
 }
 
 /* ======== MODO MÓVIL ======== */
-@media (max-width: 900px) {
-
+@media (max-width: 900px) {  
   /* Mostrar botón */
  #menu-btn {
   display: block;
@@ -64,6 +63,12 @@ main {
   padding: 4px 8px;
   cursor: pointer;
   z-index: 2000; /* más alto para evitar solapamiento */
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 60px; /* <- este es el truco */
+  }
 }
 
   /* Sidebar oculto */
