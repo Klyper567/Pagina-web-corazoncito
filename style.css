@@ -1,23 +1,20 @@
 /* ======== ESTILOS GENERALES ======== */
-
 body {
   margin: 0;
   font-family: 'Times New Roman';
 }
 
 /* ======== SIDEBAR (DESKTOP) ======== */
-
 #sidebar {
   width: 240px;
-  background: #A7C7E7;
-  border-right: 1px solid #FFEAA7;
+  background: #A7C7E7;      /* azul pastel */
+  border-right: 1px solid #FFEAA7; /* amarillo pollo */
   height: 100vh;
   padding-top: 20px;
   position: fixed;
   top: 0;
   left: 0;
 }
-
 
 #sidebar ul {
   list-style: none;
@@ -33,56 +30,50 @@ body {
   display: block;
   padding: 14px 20px;
   text-decoration: none;
-  color: #E9B8CE;
-  background: #A7C7E7;
-  border-right: 1px solid #FFEAA7;
-  
+  color: #E9B8CE;     /* rosa pastel */
 }
 
-/* ======== MAIN ======== */
-
+/* ======== MAIN (DESKTOP) ======== */
 main {
   margin-left: 240px;
   padding: 20px;
 }
 
-/* ======== BOTÓN MENÚ (MÓVIL) ======== */
-
+/* ======== BOTÓN MENÚ (DESKTOP) ======== */
 #menu-btn {
-  display: none; /* escondido en PC */
+  display: none;
 }
 
 /* ======== MODO MÓVIL ======== */
 @media (max-width: 900px) {
-  
+
   /* Mostrar botón */
- #menu-btn {
-  display: block;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  font-size: 30px;
-  background: transparent;
-  border: none;
-  padding: 4px 8px;
-  cursor: pointer;
-  z-index: 2000; /* más alto para evitar solapamiento */
-}
-
- body {
-    padding-top: 60px; /* <- este es el truco */
+  #menu-btn {
+    display: block;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    z-index: 2000; /* por encima del menú y contenido */
   }
-}
 
-  /* Sidebar oculto */
+  body {
+    padding-top: 60px; /* evita que el contenido quede bajo el botón */
+  }
+
+  /* Sidebar móvil oculto */
   #sidebar {
+    width: 240px;
+    background: #A7C7E7;
+    border-right: 1px solid #FFEAA7;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    width: 240px;
-    height: 100vh;
-    background: #A7C7E7;
-    border-right: 1px solid #FFEAA7;
     transform: translateX(-260px);
     transition: transform 0.3s ease;
     z-index: 1000;
@@ -91,12 +82,11 @@ main {
   /* Sidebar visible */
   #sidebar.open {
     transform: translateX(0);
-    background: #A7C7E7;
-  border-right: 1px solid #FFEAA7;
   }
 
-  /* Main ocupa todo */
+  /* Main ocupa toda la pantalla */
   main {
     margin-left: 0;
     padding: 20px;
   }
+}
