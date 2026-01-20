@@ -7,7 +7,7 @@ body {
 /* ======== SIDEBAR (DESKTOP) ======== */
 #sidebar {
   width: 240px;
-  background: #A7C7E7;      /* azul pastel */
+  background: #69A2DC;      /* azul pastel */
   border-right: 1px solid #FFEAA7; /* amarillo pollo */
   height: 100vh;
   padding-top: 20px;
@@ -68,7 +68,7 @@ main {
   /* Sidebar móvil oculto */
   #sidebar {
     width: 240px;
-    background: #A7C7E7;
+    background: #69A2DC;
     border-right: 1px solid #FFEAA7;
     height: 100vh;
     position: fixed;
