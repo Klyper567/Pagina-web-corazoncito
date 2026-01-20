@@ -53,18 +53,18 @@ main {
 @media (max-width: 900px) {
 
   /* Mostrar botón */
-  #menu-btn {
-    display: block;
-    position: fixed;
-    top: 14px;
-    left: 14px;
-    font-size: 32px;
-    background: transparent;
-    border: none;
-    padding: 6px 10px;
-    cursor: pointer;
-    z-index: 1001;
-  }
+ #menu-btn {
+  display: block;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  z-index: 2000; /* más alto para evitar solapamiento */
+}
 
   /* Sidebar oculto */
   #sidebar {
