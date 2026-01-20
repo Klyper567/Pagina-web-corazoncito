@@ -11,7 +11,8 @@ menuBtn.addEventListener("click", () => {
 sidebar.querySelectorAll("a").forEach(a => {
   a.addEventListener("click", () => {
     sidebar.classList.remove("open");
-        menuBtn.classList.remove("active");
+    menuBtn.classList.remove("active");
+    menuBtn.textContent = "☰";
   });
 });
 
