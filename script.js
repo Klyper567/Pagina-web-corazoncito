@@ -27,24 +27,25 @@ links.forEach(link => {
 
 
 /* ==== CARTA / ANIMACIÓN ==== */
+$(document).ready(function () {
+  var envelope = $("#envelope");
+  var btn_open = $("#open");
+  var btn_reset = $("#reset");
 
-const cartaTexto =
-`Gracias por permitirme compartir contigo un año como pareja
-lleno de muchos momentos buenos y malos, repleto de muchisimas emociones y 
-con muchas sorpresas. Deseo con todo mi corazón seguir compartiendo mi vida contigo, porque eres la persona
-que más amo en este universo y en todos los que existan. Me siento muy afortunado al poderte tener como mi novia, siempre contigo.
-Corazon de melon ❤️`;
+  envelope.click(function () {
+    open();
+  });
+  btn_open.click(function () {
+    open();
+  });
+  btn_reset.click(function () {
+    close();
+  });
 
-let i = 0;
-const speed = 40; // velocidad de tipeo
-function typeLove() {
-  if (i < cartaTexto.length) {
-    document.getElementById("love-text").textContent += cartaTexto.charAt(i);
-    i++;
-    setTimeout(typeLove, speed);
+  function open() {
+    envelope.addClass("open").removeClass("close");
   }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  typeLove();
+  function close() {
+    envelope.addClass("close").removeClass("open");
+  }
 });
