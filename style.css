@@ -1,0 +1,85 @@
+/* ======== ESTILOS GENERALES ======== */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ======== SIDEBAR (DESKTOP) ======== */
+
+#sidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin: 0;
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #222;
+}
+
+/* ======== MAIN ======== */
+
+main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* ======== BOTÓN MENÚ (MÓVIL) ======== */
+
+#menu-btn {
+  display: none; /* escondido en PC */
+}
+
+/* ======== MODO MÓVIL ======== */
+@media (max-width: 900px) {
+
+  /* Mostrar botón */
+  #menu-btn {
+    display: block;
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Sidebar oculto por defecto */
+  #sidebar {
+    transform: translateX(-260px);
+    transition: transform 0.3s ease;
+    width: 240px;
+  }
+
+  /* Sidebar visible cuando se abre */
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* El contenido ocupa todo */
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
