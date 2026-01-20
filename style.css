@@ -94,3 +94,37 @@ main {
     padding: 20px;
   }
 }
+
+
+/* ===== CARTA ===== */
+
+.love-letter-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.love-container {
+  max-width: 600px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border: 2px solid #f7a7c8;
+}
+
+.love-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #e65b8a;
+  font-weight: 700;
+}
+
+.love-text {
+  font-size: 18px;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #444;
+}
