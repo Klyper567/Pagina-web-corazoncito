@@ -78,8 +78,8 @@ main {
     left: 0;
     width: 240px;
     height: 100vh;
-    background: #fff;
-    border-right: 1px solid #ddd;
+    background: #A7C7E7;
+    border-right: 1px solid #FFEAA7;
     transform: translateX(-260px);
     transition: transform 0.3s ease;
     z-index: 1000;
