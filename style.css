@@ -50,7 +50,8 @@ main {
 }
 
 /* ======== MODO MÓVIL ======== */
-@media (max-width: 900px) {  
+@media (max-width: 900px) {
+  
   /* Mostrar botón */
  #menu-btn {
   display: block;
@@ -65,8 +66,7 @@ main {
   z-index: 2000; /* más alto para evitar solapamiento */
 }
 
-@media (max-width: 900px) {
-  body {
+ body {
     padding-top: 60px; /* <- este es el truco */
   }
 }
@@ -95,4 +95,3 @@ main {
     margin-left: 0;
     padding: 20px;
   }
-}
