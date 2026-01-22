@@ -363,3 +363,66 @@ body {
   background-color: #d9534f;
   color: #fff;
 }
+
+
+
+/* ======== LINEA DE TIEMPO ======== */
+
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 30px;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #FFEAA7; /* amarillo pollo */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: #A7C7E7; /* azul pastel */
+  border-radius: 50%;
+  border: 3px solid #FFEAA7;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.timeline-content h4 {
+  margin: 0 0 5px;
+}
+
+.timeline-content .date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.timeline-content p {
+  margin: 10px 0;
+}
+
+.timeline-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
